@@ -13,6 +13,7 @@
 		B71DEDEF1BE10E960017552B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71DEDED1BE10E960017552B /* Main.storyboard */; };
 		B71DEDF11BE10E960017552B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71DEDF01BE10E960017552B /* Assets.xcassets */; };
 		B71DEDF41BE10E960017552B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71DEDF21BE10E960017552B /* LaunchScreen.storyboard */; };
+		B71DEDFE1BE11B950017552B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71DEDFD1BE11B950017552B /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B71DEDF01BE10E960017552B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B71DEDF31BE10E960017552B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B71DEDF51BE10E960017552B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B71DEDFD1BE11B950017552B /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		B71DEDE61BE10E960017552B /* MyFavoritePlace */ = {
 			isa = PBXGroup;
 			children = (
-				B71DEDE71BE10E960017552B /* AppDelegate.swift */,
-				B71DEDE91BE10E960017552B /* FirstViewController.swift */,
-				B71DEDEB1BE10E960017552B /* SecondViewController.swift */,
+				B71DEDFC1BE11B690017552B /* Controller */,
+				B71DEDFB1BE110500017552B /* Main */,
 				B71DEDED1BE10E960017552B /* Main.storyboard */,
+			);
+			path = MyFavoritePlace;
+			sourceTree = "<group>";
+		};
+		B71DEDFB1BE110500017552B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B71DEDE71BE10E960017552B /* AppDelegate.swift */,
 				B71DEDF01BE10E960017552B /* Assets.xcassets */,
 				B71DEDF21BE10E960017552B /* LaunchScreen.storyboard */,
 				B71DEDF51BE10E960017552B /* Info.plist */,
 			);
-			path = MyFavoritePlace;
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B71DEDFC1BE11B690017552B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B71DEDE91BE10E960017552B /* FirstViewController.swift */,
+				B71DEDEB1BE10E960017552B /* SecondViewController.swift */,
+				B71DEDFD1BE11B950017552B /* ThirdViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +118,7 @@
 				TargetAttributes = {
 					B71DEDE31BE10E960017552B = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 47KQE9A93N;
 					};
 				};
 			};
@@ -140,6 +160,7 @@
 			files = (
 				B71DEDEC1BE10E960017552B /* SecondViewController.swift in Sources */,
 				B71DEDE81BE10E960017552B /* AppDelegate.swift in Sources */,
+				B71DEDFE1BE11B950017552B /* ThirdViewController.swift in Sources */,
 				B71DEDEA1BE10E960017552B /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyFavoritePlace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kostov.MyFavoritePlace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -264,10 +288,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyFavoritePlace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kostov.MyFavoritePlace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
