@@ -13,7 +13,6 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var blrView: UIVisualEffectView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        blrView.layer.cornerRadius = 25.0
     }
 
 }
